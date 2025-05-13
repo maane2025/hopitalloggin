@@ -1,16 +1,86 @@
-# hopitalloggin
+# Hospital Management App (Flutter)
 
-A new Flutter project.
+## Project Overview
 
-## Getting Started
+This is a Flutter-based mobile application designed for hospital management. The current development focus is on implementing a robust authentication and registration system for various user roles within the hospital environment.
 
-This project is a starting point for a Flutter application.
+## User Roles
 
-A few resources to get you started if this is your first Flutter project:
+-   **Patients**: Can register and log in to the application.
+-   **Doctors**: Can log in.
+-   **Admins**: Can log in.
+-   **Nurses**: Can log in.
+-   **Secretaries**: Can log in.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features Implemented (Initial Phase)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Authentication (Login)
+
+-   **Login Screen** (`lib/features/auth/screens/login_screen.dart`):
+    -   Allows users (Patients, Doctors, Admins, Nurses, Secretaries) to log in.
+    -   Input fields for Email and Password.
+    -   Dropdown selector for User Type.
+    -   Basic input validation.
+    -   Navigation to the Signup screen for new patients.
+    -   Modern UI design with clear visual elements.
+
+### 2. Patient Registration (Signup)
+
+-   **Signup Screen** (`lib/features/auth/screens/signup_screen.dart`):
+    -   Specifically for new patient registration.
+    -   Input fields for:
+        -   Full Name
+        -   Email
+        -   Password (with confirmation)
+        -   Phone Number
+        -   Date of Birth (with a native date picker)
+        -   Gender (dropdown selector)
+    -   Comprehensive input validation for all fields.
+    -   Modern UI design consistent with the Login screen.
+    -   Navigation back to the Login screen.
+
+### 3. Core Structure
+
+-   **Authentication Service** (`lib/features/auth/services/auth_service.dart`):
+    -   Contains placeholder methods for `signInUser` and `signUpPatient`.
+    -   This service will eventually handle communication with the backend for authentication logic.
+-   **Routing** (`lib/router.dart`):
+    -   Manages navigation between screens (Login, Signup).
+-   **Main Application Setup** (`lib/main.dart`):
+    -   Initializes the Flutter application and sets the Login screen as the initial route.
+
+## Project Structure (Key Directories)
+
+```
+lib/
+├── features/
+│   └── auth/
+│       ├── screens/      # UI for login and signup
+│       │   ├── login_screen.dart
+│       │   └── signup_screen.dart
+│       ├── services/     # Business logic for authentication
+│       │   └── auth_service.dart
+│       └── widgets/      # Reusable auth-related widgets (if any in future)
+├── router.dart         # App navigation
+└── main.dart           # Main application entry point
+```
+
+## How to Run the Project
+
+1.  **Ensure Flutter is installed and configured:**
+    -   Follow the official Flutter installation guide: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
+    -   Make sure the Flutter SDK `bin` directory is added to your system's PATH.
+2.  **Connect a device or start an emulator/simulator.**
+3.  **Open the project in your IDE (VS Code, Android Studio) or a terminal.**
+4.  **Navigate to the project root directory.**
+5.  **Run the command:** `flutter run`
+
+## Next Steps
+
+1.  **Update `AuthService`**: Enhance the `signUpPatient` method in `AuthService` to accept and process all new patient details (phone number, date of birth, gender).
+2.  **Backend Integration**: Implement actual backend API calls within `AuthService` for user login and patient registration.
+3.  **User-Specific Home Screens**: Design and develop home screens tailored to each user role (Patient, Doctor, Admin, etc.).
+4.  **Post-Login Navigation**: Implement logic to navigate users to their respective home screens after successful login.
+5.  **Session Management**: Add functionality to manage user sessions (e.g., keeping users logged in).
+6.  **Error Handling and User Feedback**: Improve error handling and provide more comprehensive feedback to users (e.g., detailed messages for login/signup failures).
+7.  **Further UI/UX Refinements**: Continuously refine the user interface and experience based on feedback and testing.
