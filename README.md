@@ -96,12 +96,6 @@ docs/
 4.  **Navigate to the project root directory.**
 5.  **Run the command:** `flutter run`
 
-## Next Steps
-
-1.  **Update `AuthService`**: Enhance the `signUpPatient` method in `AuthService` to accept and process all new patient details (phone number, date of birth, gender).
-2.  **Backend Integration**: Implement actual backend API calls within `AuthService` for user login and patient registration.
-3.  **User-Specific Home Screens**: Design and develop home screens tailored to each user role (Patient, Doctor, Admin, etc.).
-4.  **Post-Login Navigation**: Implement logic to navigate users to their respective home screens after successful login.
-5.  **Session Management**: Add functionality to manage user sessions (e.g., keeping users logged in).
-6.  **Error Handling and User Feedback**: Improve error handling and provide more comprehensive feedback to users (e.g., detailed messages for login/signup failures).
-7.  **Further UI/UX Refinements**: Continuously refine the user interface and experience based on feedback and testing.
+## Screen
+![Sing in](.\images\Capture d'écran 2025-05-13 135222.png)
+![Sing up](.\images\Capture d'écran 2025-05-13 135222.png)
