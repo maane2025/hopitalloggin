@@ -37,7 +37,7 @@ This is a Flutter-based mobile application designed for hospital management. The
     -   Navigation to the Signup screen for new patients.
     -   Modern UI design with clear visual elements.
 
-    ![Singin](./images/Capture d'écran 2025-05-13 135222.png)
+    ![Singin](./images/Singin.png)
 
 ### 2. Patient Registration (Signup)
 
@@ -54,7 +54,7 @@ This is a Flutter-based mobile application designed for hospital management. The
     -   Modern UI design consistent with the Login screen.
     -   Navigation back to the Login screen.
 
-![Singup](./images/Capture d'écran 2025-05-13 135222.png)
+![Singup](./images/Singin.png)
 
 ### 3. Core Structure
 
@@ -82,8 +82,8 @@ lib/
 └── main.dart           # Main application entry point
 docs/
 └── images/
-    ├── login_screen.png
-    └── signup_screen.png
+    ├── Singin.png
+    └── signup.png
 ```
 
 ## How to Run the Project
