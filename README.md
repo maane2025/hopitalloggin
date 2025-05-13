@@ -1,5 +1,18 @@
 # Hospital Management App (Flutter)
 
+## Résumé du Projet en Français
+
+Cette application mobile, développée avec Flutter, est conçue pour la gestion hospitalière. L'objectif principal de la phase actuelle de développement est la mise en place d'un système d'authentification et d'inscription sécurisé et fonctionnel pour les différents types d'utilisateurs de l'hôpital (patients, médecins, administrateurs, infirmiers, secrétaires).
+
+Les fonctionnalités initiales comprennent :
+
+*   Un écran de connexion (`Login Screen`) permettant aux différents rôles (patients, médecins, etc.) de se connecter avec leur email, mot de passe et type d'utilisateur.
+*   Un écran d'inscription (`Signup Screen`) dédié spécifiquement aux patients, leur permettant de créer un compte en fournissant des informations telles que le nom complet, l'email, le mot de passe, le numéro de téléphone, la date de naissance et le genre.
+
+L'application vise à offrir une interface utilisateur moderne et intuitive pour faciliter ces processus.
+
+---
+
 ## Project Overview
 
 This is a Flutter-based mobile application designed for hospital management. The current development focus is on implementing a robust authentication and registration system for various user roles within the hospital environment.
@@ -24,6 +37,8 @@ This is a Flutter-based mobile application designed for hospital management. The
     -   Navigation to the Signup screen for new patients.
     -   Modern UI design with clear visual elements.
 
+    ![Login Screen](docs/images/login_screen.png) 
+
 ### 2. Patient Registration (Signup)
 
 -   **Signup Screen** (`lib/features/auth/screens/signup_screen.dart`):
@@ -38,6 +53,8 @@ This is a Flutter-based mobile application designed for hospital management. The
     -   Comprehensive input validation for all fields.
     -   Modern UI design consistent with the Login screen.
     -   Navigation back to the Login screen.
+
+    ![Signup Screen](docs/images/signup_screen.png)
 
 ### 3. Core Structure
 
@@ -63,6 +80,10 @@ lib/
 │       └── widgets/      # Reusable auth-related widgets (if any in future)
 ├── router.dart         # App navigation
 └── main.dart           # Main application entry point
+docs/
+└── images/
+    ├── login_screen.png
+    └── signup_screen.png
 ```
 
 ## How to Run the Project
