@@ -54,7 +54,7 @@ This is a Flutter-based mobile application designed for hospital management. The
     -   Modern UI design consistent with the Login screen.
     -   Navigation back to the Login screen.
 
-![Singup](./images/Singin.png)
+![Singup](./images/Singup.png)
 
 ### 3. Core Structure
 
